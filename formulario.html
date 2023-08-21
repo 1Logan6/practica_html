@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+    <h1>Formulario</h1>
+    
+    <div class="nav">
+        <ul class="enlaces">
+            <li><a href="index.html" class="texto_lista">Hacia index.html</a></li>
+            <li><a href="formulario.html" class="texto_lista">Hacia formulario.html</a></li>
+        </ul>
+    </div>
+
+    <form method="get" action="formulario.html">
+
+        <label name="nombre">Nombre</label>
+        <input type="text" required placeholder="Juan">
+
+        <label name="correo">Correo electrónico</label>
+        <input type="email" required placeholder="juan3@gmail.com">
+    
+        <label class="genero">Genero</label>
+        <label id="masculino"><input type="radio" name="genero" value="masculino">Masculino</label>    
+        <label id="femenino"><input type="radio" name="genero" value="femenino">Femenino</label>
+
+        <label name="password">Contraseña</label>
+        <input type="password" required placeholder="xxxxxxxxx">
+
+        <label name="comentario">Comentario</label>
+        <textarea cols="70" rows="10" placeholder="xxxxxxxxx"></textarea>
+
+        <label name="ciudad">Ciudad:</label>
+        <select>
+            <option value="Guadalajara">Guadalajara</option>
+            <option value="Zapopan">Zapopan</option>
+            <option value="Tonalá">Tonalá</option>
+            <option value="Otra">Otra</option>
+        </select>
+
+        <label><input type="checkbox" checked>Me interesa contratarte</label>
+
+        <input class="boton_enviar" type="submit" value="Enviar formulario">
+
+    </form>
+
+</body>
+</html>
